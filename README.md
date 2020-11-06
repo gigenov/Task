@@ -20,7 +20,7 @@ Once the project is build you can start it from the main directory .
 After the start you will be prompt to enter the file names for the authorization and the body that are located in the src/resources folder
 also you should add the expected response code from the operation. 
 
-######Example command:
+##### Example command:
 
 ```
 payment -auth auth.txt -body sale_transaction_ok.json -response 200
