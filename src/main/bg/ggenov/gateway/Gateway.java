@@ -43,7 +43,11 @@ public class Gateway {
 
                 // Check the test result
                 int paymentResp = makePayment(auth, body);
-                assert paymentResp == responseCode;
+                if (paymentResp == responseCode) {
+                    System.out.println("Your test is SUCCESSFUL!\n");
+                    continue;
+                }
+                System.err.println("Your test is WRONG!\n");
             } catch (IOException e) {
                 System.err.println("Invalid command parameters, please try again!\n");
             }
